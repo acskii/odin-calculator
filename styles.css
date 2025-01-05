@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace, sans-serif;
+    padding-top: 8vh;
+}
+
+.calculator {
+    background-color: black;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    min-width: 400px;
+    min-height: 630px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1 0 80px;
+    height: 80px;
+    background-color: #575b58;
+    color: white;
+    font-weight: 900;
+    font-size: 1.8em;
+    border: 3px solid rgb(110, 105, 105);
+    border-radius: 12px;
+    box-shadow: 2px 4px #b6b8b6, 2px 3px #565656;
+}
+
+.zero {
+    flex: 3 0 160px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 1.8em;
+}
+
+.display :is(.current, .history) {
+    background-color: aquamarine;
+    box-shadow: 2px 4px #559c7d, 2px 3px #565656;
+    color: white;
+    padding: 3%;
+    font-weight: 700;
+    text-align: right;
+}
+
+.display .current {
+    flex: 1 0 30px;
+    border-radius: 0 0 12px 12px;
+}
+
+.display .history {
+    flex: 2 0 60px;
+    border-radius: 12px 12px 0 0;
+    margin-top: 12px;
+}
