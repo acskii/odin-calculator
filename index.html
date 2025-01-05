@@ -9,34 +9,41 @@
 <body>
     <div class="calculator">
         <section class="display">
-            <div class="history"></div>
-            <div class="current"></div>
+            <div class="history">
+                <span></span>
+            </div>
+            <div class="current">
+                <span></span>
+            </div>
         </section>
         <section class="input">
             <button type="button" class="btn operator" data-op="C">AC</button>
+            <button type="button" class="btn operator" data-op="-b">⌫</button>
             <button type="button" class="btn operator" data-op="%">%</button>
-            <button type="button" class="btn operator" data-op="2">^</button>
+            <button type="button" class="btn operator" data-op="*">X</button>
 
-            <button type="button" class="btn operator" data-op="/">/</button>
             <button type="button" class="btn number" data-op="7">7</button>
             <button type="button" class="btn number" data-op="8">8</button>
             <button type="button" class="btn number" data-op="9">9</button>
-            <button type="button" class="btn operator" data-op="+">+</button>
+            <button type="button" class="btn operator" data-op="/">/</button>
 
             <button type="button" class="btn number" data-op="4">4</button>
             <button type="button" class="btn number" data-op="5">5</button>
             <button type="button" class="btn number" data-op="6">6</button>
-            <button type="button" class="btn operator" data-op="-">-</button>
+            <button type="button" class="btn operator" data-op="+">+</button>
 
             <button type="button" class="btn number" data-op="1">1</button>
             <button type="button" class="btn number" data-op="2">2</button>
             <button type="button" class="btn number" data-op="3">3</button>
-            <button type="button" class="btn operator" data-op="*">X</button>
+            <button type="button" class="btn operator" data-op="-">-</button>
 
-            <button type="button" class="btn number zero" data-op="0">0</button>
+            <button type="button" class="btn number zero" data-op="z">0</button>
             <button type="button" class="btn operator" data-op=".">.</button>
+
             <button type="button" class="btn operator" data-op="=">=</button>
         </section>
     </div>
+
+    <script type="module" src="static/js/main.js"></script>
 </body>
 </html>
